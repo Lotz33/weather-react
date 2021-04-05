@@ -33,6 +33,10 @@ a {
   color: #5eaaa8;
 }
 
+.App {
+  margin: 20px;
+}
+
 .table {
   margin-bottom: 0px;
 }
