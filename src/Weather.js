@@ -38,16 +38,16 @@ export default function Weather() {
               18
             </span>
             <span id="units">
-              <a href="#" id="celsius-link" className="active">
+              <a href="#0" id="celsius-link" className="active">
                 ℃
               </a>{" "}
               |
-              <a href="#" id="fahrenheit-link">
+              <a href="#0" id="fahrenheit-link">
                 ℉
               </a>
             </span>
 
-            <img src="#" alt="" id="icon1" className="float-left" />
+            <img src="#0" alt="" id="icon1" className="float-left" />
           </h2>
         </div>
       </div>

@@ -10,12 +10,12 @@ export default function Table() {
             <td>Time</td>
             <td>High | Low</td>
             <td>
-              <img
-                src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
+              {/* <img
+                src="`http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`"
                 alt=""
                 id="icon2"
                 className="float-right"
-              />
+              /> */}
             </td>
           </tr>
         </tbody>
