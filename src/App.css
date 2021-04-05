@@ -160,7 +160,10 @@ a {
   background-color: #5eaaa8;
   border-color: #5eaaa8;
   padding: 1px 6px;
+  margin-right: 3px;
+  margin-top: 3px;
 }
+
 .card-footer:last-child {
   border-radius: 6px;
 }
@@ -184,7 +187,7 @@ a {
 }
 
 input[type="submit" i] {
-  height: 36px;
+  height: 28px;
   border-radius: 6px;
   color: #fff;
   background-color: #5eaaa8;
@@ -192,6 +195,7 @@ input[type="submit" i] {
   padding: 1px 6px;
   border-width: 0.5px;
   border-style: none;
+  margin-left: 3px;
 }
 
 .active {
