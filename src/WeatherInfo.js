@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import Table from "./Table";
 import WeatherIcon from "./WeatherIcon";
+import Temp from "./Temp";
 
 export default function WeatherInfo(props) {
   return (
@@ -14,7 +15,7 @@ export default function WeatherInfo(props) {
 
           <ul>
             <li>
-              <strong>Temperature:</strong> {Math.round(props.data.temperature)}
+              <strong>Temperature:</strong> {Math.round(props.data.temp)}
               °C
             </li>
             <li className="text-capitalize">
@@ -36,20 +37,8 @@ export default function WeatherInfo(props) {
       </div>
       <div className="card">
         <div className="card-body-right">
+          <Temp celsius={props.data.temp} />
           <h2>
-            <span className="card-title" id="degrees">
-              18
-            </span>
-            <span id="units">
-              <a href="#0" id="celsius-link" className="active">
-                ℃
-              </a>{" "}
-              |
-              <a href="#0" id="fahrenheit-link">
-                ℉
-              </a>
-            </span>
-            <br /> <br />
             <WeatherIcon code={props.data.icon} />
           </h2>
         </div>
