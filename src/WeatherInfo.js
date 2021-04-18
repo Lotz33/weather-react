@@ -10,12 +10,22 @@ export default function WeatherInfo(props) {
           <h5 className="card-title" id="city-name">
             {props.data.city}
           </h5>
-          <br />
-          <ul className="text-capitalize">
-            <li>Temperature: {Math.round(props.data.temperature)}°C</li>
-            <li>Description: {props.data.description}</li>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind speed: {props.data.wind}km/h</li>
+
+          <ul>
+            <li>
+              <strong>Temperature:</strong> {Math.round(props.data.temperature)}
+              °C
+            </li>
+            <li className="text-capitalize">
+              <strong>Description:</strong> <br />
+              {props.data.description}
+            </li>
+            <li>
+              <strong>Humidity:</strong> {props.data.humidity}%
+            </li>
+            <li>
+              <strong>Wind speed:</strong> {props.data.wind}km/h
+            </li>
             <br />
             <li>
               <FormattedDate date={props.data.date} />
