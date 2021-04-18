@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Table from "./Table";
 import axios from "axios";
+import "./weather.css";
 
 export default function Weather() {
   let [city, setCity] = useState("");
@@ -63,9 +64,11 @@ export default function Weather() {
               xxx
             </h5>
             <br />
-            <ul>
+            <ul className="text-capitalize">
               <li>
-                <span id="description"> </span>
+                {/* <span id="description" className="text-capitalize">
+                  {" "}
+                </span> */}
               </li>
               <li>Temperature: {Math.round(weather.temp)}°C</li>
               <li>Description: {weather.description}</li>
