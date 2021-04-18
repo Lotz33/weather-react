@@ -7,7 +7,7 @@ export default function Weather() {
   let [weather, setWeather] = useState("");
 
   function showWeather(response) {
-    console.log(response);
+    // console.log(response);
     setWeather({
       temp: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -23,6 +23,7 @@ export default function Weather() {
   }
 
   function updateCity(event) {
+    console.log(event.target.value);
     setCity(event.target.value);
   }
 
