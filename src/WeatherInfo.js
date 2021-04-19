@@ -39,12 +39,12 @@ export default function WeatherInfo(props) {
         <div className="card-body-right">
           <Temp celsius={props.data.temp} />
           <h2>
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size={100} />
           </h2>
         </div>
       </div>
       <div className="card ms-3">
-        <Table />
+        <Table coord={props.data.coord} />
       </div>
     </div>
   );

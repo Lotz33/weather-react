@@ -18,6 +18,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       icon: response.data.weather[0].icon,
+      coord: response.data.coord,
     });
   }
 
