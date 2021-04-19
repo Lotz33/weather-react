@@ -16,7 +16,24 @@ export default function Table(props) {
     return (
       <div className="card-body">
         <h5 className="cardbody-question">Daily forecast:</h5>
-        <ForecastDay data={forecast[0]} />
+        <table className="table" id="forecast">
+          <tbody>
+            <tr>
+              <td>Day</td>
+              <td>High | Low</td>
+              <td>{""}</td>
+            </tr>
+            {forecast.map(function (dailyForecast, index) {
+              // if (index < 6) {
+              return (
+                <div key={index}>
+                  <ForecastDay data={dailyForecast} />
+                </div>
+              );
+              // }
+            })}
+          </tbody>
+        </table>
       </div>
     );
   } else {

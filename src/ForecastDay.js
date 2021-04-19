@@ -10,24 +10,14 @@ export default function ForecastDay(props) {
   }
 
   return (
-    <table className="table" id="forecast">
-      <tbody>
-        <tr>
-          <td>Day</td>
-          <td>High | Low</td>
-          <td>{""}</td>
-        </tr>
-        <tr>
-          <td>{day()}</td>
-          <td>
-            {Math.round(props.data.temp.max)}° |{" "}
-            {Math.round(props.data.temp.min)}°
-          </td>
-          <td>
-            <WeatherIcon code={props.data.weather[0].icon} size={20} />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <tr>
+      <td>{day()}</td>
+      <td>
+        {Math.round(props.data.temp.max)}° | {Math.round(props.data.temp.min)}°
+      </td>
+      <td>
+        <WeatherIcon code={props.data.weather[0].icon} size={20} />
+      </td>
+    </tr>
   );
 }
