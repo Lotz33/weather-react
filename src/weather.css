@@ -1,11 +1,12 @@
 .table {
   margin-bottom: 0px;
+  text-align: left;
 }
 
 .table > :not(caption) > * > * {
   width: 40px;
   border-color: #ffffff;
-  padding: 5px;
+  /* padding: 5px; */
   overflow: hidden;
   white-space: nowrap;
   position: relative;

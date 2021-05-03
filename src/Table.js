@@ -22,17 +22,12 @@ export default function Table(props) {
         <h5 className="cardbody-question">Daily forecast:</h5>
         <table className="table" id="forecast">
           <tbody>
-            <tr>
-              <td>Day</td>
-              <td>High | Low</td>
-              <td>{""}</td>
-            </tr>
             {forecast.map(function (dailyForecast, index) {
               if (index < 6) {
                 return (
-                  <span key={index}>
+                  <tr key={index}>
                     <ForecastDay data={dailyForecast} />
-                  </span>
+                  </tr>
                 );
               } else {
                 return null;
