@@ -25,9 +25,9 @@ export default function Table(props) {
             {forecast.map(function (dailyForecast, index) {
               if (index < 6) {
                 return (
-                  <tr key={index}>
+                  <div key={index}>
                     <ForecastDay data={dailyForecast} />
-                  </tr>
+                  </div>
                 );
               } else {
                 return null;

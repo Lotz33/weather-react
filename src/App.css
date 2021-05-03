@@ -15,9 +15,10 @@ h5 {
 }
 td {
   color: #00587a;
-  margin-right: 10px;
-  padding-right: 20px;
+  /* padding-left: 20px; */
   text-align: left;
+  min-width: 50px;
+  vertical-align: middle;
 }
 
 li {
@@ -38,6 +39,6 @@ a {
 }
 
 .App {
-  margin: 20px auto;
+  margin: 0px 20px auto;
   max-width: 600px;
 }

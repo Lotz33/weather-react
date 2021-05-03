@@ -43,7 +43,7 @@ export default function WeatherInfo(props) {
           </h2>
         </div>
       </div>
-      <div className="card ms-3">
+      <div className="card ms-2">
         <Table coord={props.data.coord} />
       </div>
     </div>

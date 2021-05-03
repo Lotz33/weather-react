@@ -15,7 +15,7 @@ export default function ForecastDay(props) {
       <td>
         {Math.round(props.data.temp.max)}° | {Math.round(props.data.temp.min)}°
       </td>
-      <td>
+      <td className="icon">
         <WeatherIcon code={props.data.weather[0].icon} size={20} />
       </td>
     </tr>
