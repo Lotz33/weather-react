@@ -17,8 +17,12 @@ td {
   color: #00587a;
   /* padding-left: 20px; */
   text-align: left;
-  min-width: 50px;
+  min-width: 55px;
   vertical-align: middle;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0rem 0rem;
 }
 
 li {

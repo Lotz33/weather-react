@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./weather.css";
 import WeatherInfo from "./WeatherInfo";
+import Question from "./Question";
 
 export default function Weather(props) {
   let [weather, setWeather] = useState({ ready: false });
@@ -19,6 +20,7 @@ export default function Weather(props) {
       city: response.data.name,
       icon: response.data.weather[0].icon,
       coord: response.data.coord,
+      weather: response.data.weather[0].main,
     });
   }
 
@@ -58,10 +60,7 @@ export default function Weather(props) {
       <div className="card-panel">
         <div className="row">
           <div className="col-6">
-            <div className="cardbody-question" id="rain-question">
-              Is it currently raining in {weather.city}?
-            </div>
-            <p className="card-text" id="rain-response"></p>
+            <Question data={weather} />
           </div>
           <div className="col-6">
             <form id="form-search" onSubmit={submitSearch}>

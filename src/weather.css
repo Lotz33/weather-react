@@ -24,8 +24,9 @@
   border-bottom-color: #ffffff;
 }
 
-.icon {
+td.icon {
   padding-left: 20px;
+  padding-top: 5px;
 }
 
 #icon1 {

@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./Header";
 import Weather from "./Weather";
 import Footer from "./Footer";
+import Header from "./Header";
 
 function App() {
   return (

@@ -21,19 +21,17 @@ export default function Table(props) {
       <div className="card-body">
         <h5 className="cardbody-question">Daily forecast:</h5>
         <table className="table" id="forecast">
-          <tbody>
-            {forecast.map(function (dailyForecast, index) {
-              if (index < 6) {
-                return (
-                  <div key={index}>
-                    <ForecastDay data={dailyForecast} />
-                  </div>
-                );
-              } else {
-                return null;
-              }
-            })}
-          </tbody>
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 6) {
+              return (
+                <tbody key={index}>
+                  <ForecastDay data={dailyForecast} />
+                </tbody>
+              );
+            } else {
+              return null;
+            }
+          })}
         </table>
       </div>
     );
