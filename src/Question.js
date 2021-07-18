@@ -19,7 +19,8 @@ export default function Question(props) {
           Is it currently raining in {props.data.city}?
         </div>
         <span className="card-text" id="rain-response">
-          <strong>Not at the moment</strong>, but check the forecast.
+          <strong>Not at the moment</strong>, <br />
+          but check the forecast.
         </span>
       </div>
     );

@@ -17,7 +17,7 @@ td {
   color: #00587a;
   /* padding-left: 20px; */
   text-align: left;
-  min-width: 55px;
+  min-width: 50px;
   vertical-align: middle;
 }
 
@@ -43,6 +43,6 @@ a {
 }
 
 .App {
-  margin: 0px 20px auto;
+  margin: 0px auto;
   max-width: 600px;
 }
